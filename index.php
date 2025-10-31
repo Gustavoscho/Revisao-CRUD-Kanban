@@ -3,17 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Cadastro de Usuários</h1>
+    <div id="titulo"><h1>Cadastro de Usuários</h1></div>
 
-    <form action="" method="post">
-        <label for="username">Nome:</label>
-        <input type="text" id="username" name="username"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Cadastrar">
+    <form action="" method="post" id ="forms">
+        <label  for="username">Nome</label>
+        <input class="form-item" type="text" id="username" name="username">
+
+        <label for="email">Email</label>
+        <input class="form-item" type="email" id="email" name="email">
+
+        <input id="button" type="submit" value="CADASTRAR">
     </form>
 
     <a href="tasks.php">criar tarefa</a>

@@ -3,37 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tasks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Cadastro de Tarefas</h1>
+    <div id="titulo"><h1>Cadastro de Tarefas</h1></div>
 
-    <form action="" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br><br>
+    <form action="" method="post" id="forms">
+        <label  for="nome">Nome</label>
+        <input class="form-item" type="text" id="nome" name="nome">
 
-        <label for="descricao">Descricao:</label>
-        <textarea name="descricao" id="descricao"></textarea><br><br>
+        <label for="descricao">Descrição</label>
+        <textarea class="form-item" name="descricao" id="descricao"></textarea>
 
-        <label for="setor">Setor:</label>
-        <input type="text" id="setor" name="setor"><br><br>
+        <label for="setor">Setor</label>
+        <input class="form-item" type="text" id="setor" name="setor">
 
-        <label for="prioridade">Prioridade:</label>
-        <select id="prioridade" name="prioridade">
+        <label for="prioridade">Prioridade</label>
+        <select class="form-item" id="prioridade" name="prioridade">
             <option value="baixa">Baixa</option>
             <option value="média">Média</option>
             <option value="alta">Alta</option>
-        </select><br><br>
+        </select>
 
-        <label for="status">Status:</label>
-        <select id="status" name="status">
-            <option value="a fazer">a fazer</option>
-            <option value="em progresso">em progresso</option>
-            <option value="feito">feito</option>
-        </select><br><br>
+        <label for="status">Status</label>
+        <select class="form-item" id="status" name="status">
+            <option value="a fazer">A fazer</option>
+            <option value="em progresso">Em progresso</option>
+            <option value="feito">Feito</option>
+        </select>
 
-
-        <input type="submit" value="Cadastrar">
+        <input id="button" type="submit" value="CADASTRAR">
     </form>
 
     <a href="index.php">criar usuario</a>
