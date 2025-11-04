@@ -16,7 +16,7 @@
         <label for="email">Email</label>
         <input class="form-item" type="email" id="email" name="email" required>
 
-        <input id="button" type="submit" value="CADASTRAR">
+        <input class="button" type="submit" value="CADASTRAR">
     </form>
 
     <a href="tela de gerenciamento.php">voltar</a>

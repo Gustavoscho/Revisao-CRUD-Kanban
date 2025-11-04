@@ -33,7 +33,7 @@
             <option value="feito">Feito</option>
         </select>
 
-        <input id="button" type="submit" value="CADASTRAR">
+        <input class="button" type="submit" value="CADASTRAR">
     </form>
 
     <a href="tela de gerenciamento.php">voltar</a>

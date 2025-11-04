@@ -7,7 +7,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
-    padding-top: 70px; /* espaço para nav fixa no topo */
+    padding-top: 70px;
 }
 
 #titulo {
@@ -34,7 +34,7 @@ body{
     margin-top: 0;
 }
 
-#button {
+.button {
     display: block;
     width: 40%;
     background-color: #2841cc;
@@ -50,26 +50,24 @@ body{
 #container {
     display: flex;
     padding: 10px;
-    background-color: aqua;
-    border: 2px solid blue; 
-    border-radius: 6px;
 }
 
 .menu {
     margin: 0 10px;
     padding: 10px;
-    background-color: lightgray;
-    border: 2px solid gray; 
-    border-radius: 6px;
+    background-color: rgb(241, 241, 241);
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 10px;
 }
 
 .task {
     margin: 0 10px;
     padding: 10px;
-    background-color: lightgreen;
-    border: 2px solid green;
-    border-radius: 4px;
-
+    background-color: rgb(241, 225, 169);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    max-width: 600px;
+    min-width: 400px;
 }
 
 nav {
@@ -77,10 +75,16 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #bebebe;
-    padding: 14px 0;
+    background-color: rgb(241, 241, 241);
+    padding: 12px 0;
     display: flex;
     justify-content: center;
-    gap: 30px; 
+    gap: 50px; 
     margin-bottom: 20px;
+    border-bottom: 2px solid rgb(101, 1, 168);
+}
+
+.titulotarefa {
+    text-align: center;
+    margin-bottom: 10px;
 }

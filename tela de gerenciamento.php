@@ -16,7 +16,7 @@
     </nav>
     <div id="container">
         <div class="menu">
-            <h2>A Fazer</h2>
+            <h2 class="titulotarefa">A Fazer</h2>
             <?php
                 $sql = "SELECT * FROM tasks WHERE status='a fazer'";
                 $result = $conn->query($sql);
@@ -36,7 +36,7 @@
             ?>
         </div>
         <div class="menu">
-            <h2>Em Progresso</h2>
+            <h2 class="titulotarefa">Em Progresso</h2>
             <?php
                 $sql = "SELECT * FROM tasks WHERE status='em progresso'";
                 $result = $conn->query($sql);
@@ -49,13 +49,14 @@
                         echo "<br><strong>prioridade: </strong>" . $row['prioridade'];
                         echo "<br><strong>setor: </strong>" . $row['setor'];
                         echo "<br><strong>reponsável: </strong>" . $row['user_id'];
+                        echo "<br><button>Editar</button><button>Excluir</button>";
                         echo "</div>";
                     }
                 }
             ?>
         </div>
         <div class="menu">
-            <h2>Feito</h2>
+            <h2 class="titulotarefa">Feito</h2>
             <?php
                 $sql = "SELECT * FROM tasks WHERE status='feito'";
                 $result = $conn->query($sql);
@@ -68,6 +69,7 @@
                         echo "<br><strong>prioridade: </strong>" . $row['prioridade'];
                         echo "<br><strong>setor: </strong>" . $row['setor'];
                         echo "<br><strong>reponsável: </strong>" . $row['user_id'];
+                        echo "<br><button>Editar</button><button>Excluir</button>";
                         echo "</div>";
                     }
                 }
