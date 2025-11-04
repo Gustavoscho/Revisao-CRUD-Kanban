@@ -9,17 +9,17 @@
 <body>
     <div id="titulo"><h1>Cadastro de Usuários</h1></div>
 
-    <form action="" method="post" id ="forms">
+    <form method="post" id ="forms">
         <label  for="username">Nome</label>
-        <input class="form-item" type="text" id="username" name="username">
+        <input class="form-item" type="text" id="username" name="username" required>
 
         <label for="email">Email</label>
-        <input class="form-item" type="email" id="email" name="email">
+        <input class="form-item" type="email" id="email" name="email" required>
 
         <input id="button" type="submit" value="CADASTRAR">
     </form>
 
-    <a href="tasks.php">criar tarefa</a>
+    <a href="tela de gerenciamento.php">voltar</a>
 </body>
 
 </html>

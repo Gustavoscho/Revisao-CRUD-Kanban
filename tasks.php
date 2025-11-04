@@ -11,23 +11,23 @@
 
     <form action="" method="post" id="forms">
         <label  for="nome">Nome</label>
-        <input class="form-item" type="text" id="nome" name="nome">
+        <input class="form-item" type="text" id="nome" name="nome" required>
 
         <label for="descricao">Descrição</label>
-        <textarea class="form-item" name="descricao" id="descricao"></textarea>
+        <textarea class="form-item" name="descricao" id="descricao" required></textarea>
 
         <label for="setor">Setor</label>
-        <input class="form-item" type="text" id="setor" name="setor">
+        <input class="form-item" type="text" id="setor" name="setor" required>
 
         <label for="prioridade">Prioridade</label>
-        <select class="form-item" id="prioridade" name="prioridade">
+        <select class="form-item" id="prioridade" name="prioridade" required>
             <option value="baixa">Baixa</option>
             <option value="média">Média</option>
             <option value="alta">Alta</option>
         </select>
 
         <label for="status">Status</label>
-        <select class="form-item" id="status" name="status">
+        <select class="form-item" id="status" name="status" required>
             <option value="a fazer">A fazer</option>
             <option value="em progresso">Em progresso</option>
             <option value="feito">Feito</option>
@@ -36,7 +36,7 @@
         <input id="button" type="submit" value="CADASTRAR">
     </form>
 
-    <a href="index.php">criar usuario</a>
+    <a href="tela de gerenciamento.php">voltar</a>
 </body>
 </html>
 
